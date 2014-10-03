@@ -54,3 +54,9 @@ package.
 | Toggle chain call joining | ctrl+alt+v        | JoinChainCall: toggle  |
 | Join chain call           | ctrl+m, j         | JoinChainCall: join    |
 | Unjoin chain call         | ctrl+m, ctrl+j    | JoinChainCall: unjoin  |
+
+
+### Dependencies
+
+- https://github.com/shagabutdinov/sublime-statement
+- https://github.com/shagabutdinov/sublime-expression
