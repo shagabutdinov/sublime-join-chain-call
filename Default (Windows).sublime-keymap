@@ -1,0 +1,16 @@
+[
+  {
+    "keys": ["ctrl+alt+v"],
+    "command": "toggle_chain_call_joining"
+  },
+
+  {
+    "keys": ["ctrl+m", "ctrl+j"],
+    "command": "unjoin_chain_call"
+  },
+
+  {
+    "keys": ["ctrl+m", "j"],
+    "command": "join_chain_call"
+  },
+]

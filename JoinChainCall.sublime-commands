@@ -1,0 +1,16 @@
+[
+  {
+    "caption": "JoinChainCall: toggle",
+    "command": "toggle_chain_call_joining"
+  },
+
+  {
+    "caption": "JoinChainCall: unjoin",
+    "command": "unjoin_chain_call"
+  },
+
+  {
+    "caption": "JoinChainCall: join",
+    "command": "join_chain_call"
+  },
+]
