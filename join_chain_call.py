@@ -1,9 +1,17 @@
 import sublime
 import sublime_plugin
 
-from Statement import statement
-from Expression import expression
 import re
+
+try:
+  from Statement import statement
+  from Expression import expression
+except ImportError:
+  sublime.error_message("Dependency import failed; please read readme for " +
+   "JoinChainCall plugin for installation instructions; to disable this " +
+   "message remove this plugin")
+
+
 
 def _get_token(view, selection):
   if not selection.empty():

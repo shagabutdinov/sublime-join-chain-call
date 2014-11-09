@@ -1,5 +1,6 @@
 import sublime
 import sublime_plugin
+
 from JoinChainCall import join_chain_call
 
 class ToggleChainCallJoining(sublime_plugin.TextCommand):

@@ -1,16 +1,25 @@
 [
   {
     "keys": ["ctrl+alt+v"],
-    "command": "toggle_chain_call_joining"
+    "command": "toggle_chain_call_joining",
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+    ]
   },
 
   {
     "keys": ["ctrl+m", "ctrl+j"],
-    "command": "unjoin_chain_call"
+    "command": "unjoin_chain_call",
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+    ]
   },
 
   {
     "keys": ["ctrl+m", "j"],
-    "command": "join_chain_call"
+    "command": "join_chain_call",
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+    ]
   },
 ]
