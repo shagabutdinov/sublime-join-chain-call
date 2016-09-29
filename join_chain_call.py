@@ -46,8 +46,12 @@ def unjoin(view, edit, selection):
 
   line = view.substr(view.line(token[0]))
   indent = re.search(r'^(\s*)', line).group(1)
-  delimeters = expression.find_matches(view, token[0], r'(\.|->)',
-    {'range': token})
+  delimeters = expression.find_matches(
+    view,
+    token[0],
+    r'(\.|->)',
+    {'range': token}
+  )
 
   for delimeter in reversed(delimeters):
     region = sublime.Region(
@@ -55,7 +59,7 @@ def unjoin(view, edit, selection):
       token[0] + delimeter.end(0)
     )
 
-    view.replace(edit, region, delimeter.group(1) + "\n" + indent + "\t")
+    view.replace(edit, region, "\n" + indent + "\t" + delimeter.group(1))
 
 def toggle(view, edit, selection):
   token = _get_token(view, selection)
